@@ -6,14 +6,12 @@
 
         <h1>  PREDICTION :  </h1>
     
-    {%if data <= 50%}
-    <h1>Iris-setosa</h1>  
-    <img src='static\setosa.jpg'>  
-
+    {%if data>=0 and data<20%}
+    <h1>Low</h1>  
+    {%elif data>20 and data<50 %}
+    <h1>Average</h1>  
     {%else%}
-    <h1>Iris-versicolor</h1>
-    <img src='static\verci.jpg'>
-    
+    <h1>High</h1>
     {%endif%}
 
         <br><br>
