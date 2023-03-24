@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
@@ -32,12 +32,12 @@
         Psychological, emotional, and social well-being are all aspects of mental health. It affects the way how one thinks, feels, and acts. The gradual increment of mental health issues and the requirement for effective medical health care have led us to do this project. This project aims to predict the risk of facing mental health problems by IT employees so that early diagnosis of the issues enhances patients' quality of life and enables professionals to treat them more successfully. It also helps to improve their productivity. In this project, we have applied four Machine Learning(ML) algorithms and evaluated their performance based on several metrics. After comparison, we found Random Forest Classifier was performing well and given an accuracy of 81.22\%. While working on this project, we meticulously studied a number of research papers and online articles related to machine-learning approaches in predicting mental health problems. We have discussed the proposed model, literature review and comparative analysis, model evaluation, and potential future prospects for the use of machine learning in the field of mental health.
     </div>
 <div>
-    <form method="", action="">
+    <form method="POST", action="{{url_for('home')}}">
         <label for="">Enter your age</label>
-        <input type="number">
+        <input type="number" name="age">
           <br>
         <label for="">Enter your gender</label>
-        <select name="age" id="age">
+        <select name="gender" id="gender">
             <option value="" selected disabled></option>
             <option value="male">male</option>
             <option value="female">female</option>

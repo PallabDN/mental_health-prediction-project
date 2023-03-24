@@ -16,14 +16,14 @@ def man():
 @app.route('/predict', methods=['POST'])
 
 def home():
-    data1 = request.form['a']
-    data2 = request.form['b']
-    data3 = request.form['c']
-    data4 = request.form['d']
-    data5 = request.form['d']
-    data6 = request.form['d']
-    data7 = request.form['d']
-    data8 = request.form['d']
+    data1 = request.form['age']
+    data2 = request.form['gender']
+    data3 = request.form['family']
+    data4 = request.form['benefits']
+    data5 = request.form['care']
+    data6 = request.form['anonymous']
+    data7 = request.form['leave']
+    data8 = request.form['work']
     arr = np.array([[data1, data2, data3, data4, data5, data6, data7, data8]])
     pred = model.predict(arr)
     return render_template('after.html', data=pred)
