@@ -70,5 +70,24 @@ nav ul li a:hover{
 .login-button:hover{
     color: #62CDFF;
 }
+.abstractt{
+    background-color: aqua;
+   padding: 80px 80px ;
+   /* background: url("dddd.jpg"); */
+   /* width: 100%; */
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 20px;
+
+}
+.background-imagess{
+    background: url("dddd.jpg");
+    margin: 20px 20px;
+    /* image-resolution: 10px; */
+    opacity: 0.5;
+}
 
 
