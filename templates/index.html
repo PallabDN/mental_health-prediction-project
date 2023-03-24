@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M-Bug</title>
-    <link rel="stylesheet"  type= "text/css" href="{{url_for('static',filename='css/style.css') }}">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
@@ -13,21 +13,85 @@
 </head>
 <body>
     <nav>
-        <div class="logo">M-Bug</div>
+        <div class="logo">health</div>
         <ul>
             <li><a href="#">Abstract </a></li>
             <li><a href="#">testimonials</a></li>
-            <li><a href="#">registeration</a></li>
+            <!-- <li><a href="#">registeration</a></li> -->
             <li><a href="#">consulting Doctor</a></li>
             <li><a href="#">feedback</a></li>
         
         </ul>
     </nav>
-    <section class="background-image">
-        <input type="button" value="login" class="login-button">
+   
+     <section class="background-image">
+        <input type="button" value="Check your mental health status" class="login-button">
     </section>
    
-
+    <div class="abstractt">
+        Psychological, emotional, and social well-being are all aspects of mental health. It affects the way how one thinks, feels, and acts. The gradual increment of mental health issues and the requirement for effective medical health care have led us to do this project. This project aims to predict the risk of facing mental health problems by IT employees so that early diagnosis of the issues enhances patients' quality of life and enables professionals to treat them more successfully. It also helps to improve their productivity. In this project, we have applied four Machine Learning(ML) algorithms and evaluated their performance based on several metrics. After comparison, we found Random Forest Classifier was performing well and given an accuracy of 81.22\%. While working on this project, we meticulously studied a number of research papers and online articles related to machine-learning approaches in predicting mental health problems. We have discussed the proposed model, literature review and comparative analysis, model evaluation, and potential future prospects for the use of machine learning in the field of mental health.
+    </div>
+<div>
+    <form method="", action="">
+        <label for="">Enter your age</label>
+        <input type="number">
+          <br>
+        <label for="">Enter your gender</label>
+        <select name="age" id="age">
+            <option value="" selected disabled></option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="trans">trans</option>
+          </select>
+          <br>
+          <label for="">Is there any family history of mental health issues</label>
+          <select name="family" id="family">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+            <br>
+            <label for="">Are you entitled to any company benefits</label>
+            <select name="benefits" id="benefits">
+                <option value="dont know">dont know</option>
+                <option value="no">no</option>
+                <option value="yes">yes</option>
+              </select>
+              <br>
+              <label for="">Is your company gives care options regarding mental health issues</label>
+              <select name="care" id="care">
+                  <option value="no">no</option>
+                  <option value="not sure">not sure</option>
+                  <option value="yes">yes</option>
+                </select>
+                <br>
+                <label for="">Are you willing to share your mental health issues or remain anonymous</label>
+                <select name="anonymous" id="anonymous">
+                    <option value="dont know">dont know</option>
+                    <option value="no">no</option>
+                    <option value="yes">yes</option>
+                  </select>
+                  <br>
+                  <label for="">How easy to get leave from your company</label>
+                  <select name="leave" id="leave">
+                      <option value="dont know">dont know</option>
+                      <option value="somewhat difficult">somewhat difficult</option>
+                      <option value="somewhat easy">somewhat easy</option>
+                      <option value="very difficult">very difficult</option>
+                      <option value="very easy">very easy</option>
+                    </select>
+                    <br>
+                    <label for="">Have you experienced work interference?</label>
+                    <select name="work" id="work">
+                        <option value="dont know">dont know</option>
+                        <option value="never">never</option>
+                        <option value="often">often</option>
+                        <option value="rarely">rarely</option>
+                        <option value="sometimes">sometimes</option>
+                      </select>
+                      <br>
+         <input type="submit" , value='predict!' >
+     </form> 
+</div>
   
    
 </body>
