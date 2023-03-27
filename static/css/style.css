@@ -1,10 +1,14 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
     font-family: arial;
+    scroll-behavior: smooth;
 
 }
-nav{
+header{
     position: fixed;
     top: 0;
     left: 0;
@@ -13,6 +17,7 @@ nav{
     padding: 10px 90px;
     box-sizing: border-box;
     background: rgba(0,0,0,0.6);
+    z-index: 1111;
 }
 .logo{
     padding: 22px 20px;
@@ -139,4 +144,11 @@ nav ul li a:hover{
 }
 /* Abstract */
 
-
+.doctor{
+    background-color: #62CDFF;
+    height: 800px;
+}
+.feedback{
+    background-color: yellow;
+    height: 800px;
+}
