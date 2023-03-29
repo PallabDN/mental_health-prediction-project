@@ -1,10 +1,14 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
+import pandas as pd
 from sklearn.preprocessing import binarize, LabelEncoder, MinMaxScaler
 from sklearn import preprocessing
 
+
+es = pickle.load(open('es.pkl', 'rb'))
 model = pickle.load(open('iri.pkl', 'rb'))
+
 
 app = Flask(__name__)
 
@@ -26,21 +30,29 @@ def home():
     data6 = request.form['anonymous']
     data7 = request.form['leave']
     data8 = request.form['work']
+    
+
+    a = np.array([[int(data1), data2, data3, data4, data5, data6, data7, data8]],dtype=object)
+
+    arr = pd.DataFrame(a,index=None,columns=['Age','Gender','family_history','benefits','care_options','anonymity','leave','work_interfere'])
+
+    
+
+    #print(type(arr[['Age']]))
+
+    es(arr,'Age')
+        
+    print(arr)
 
 
-    a = np.array([[data1, data2, data3, data4, data5, data6, data7, data8]])
+    #pred = model.predict(a)
 
+    
+    pred=model.predict([[0.59090909,1,0,0,0,0,0,3]])
+    
+    
+    print("predict "+str(pred))
 
-    for i in range(8):
-        le = preprocessing.LabelEncoder()
-        le.fit(np.array([a[0][i]]))
-        a[0][i] = int(le.transform(np.array([a[0][i]])))
-
-
-    scaler = MinMaxScaler()
-    a[0][0] = int(scaler.fit_transform(np.array([a[0][0]]).reshape(-1,1)))
-
-    pred = model.predict(a)
     return render_template('after.html',data=pred)
 
 
