@@ -6,7 +6,7 @@ from sklearn.preprocessing import binarize, LabelEncoder, MinMaxScaler
 from sklearn import preprocessing
 
 
-es = pickle.load(open('es.pkl', 'rb'))
+#es = pickle.load(open('es.pkl', 'rb'))
 model = pickle.load(open('iri.pkl', 'rb'))
 
 
@@ -40,7 +40,7 @@ def home():
 
     #print(type(arr[['Age']]))
 
-    es(arr,'Age')
+    #es(arr,'Age')
         
     print(arr)
 

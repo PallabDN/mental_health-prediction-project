@@ -89,11 +89,8 @@ nav ul li a:hover{
 
 }
 .background-imagess{
-<<<<<<< HEAD
     background: url("dddd.jpg"); 
-=======
     background: url("/static/images/dddd.jpg"); /*//TODO: #9 @Dichang */
->>>>>>> 2f569e7f6ebf3e889fcd0e460285b144bedcd7d2
     margin: 20px 20px;
     width: 84%;
     height: 45vh;

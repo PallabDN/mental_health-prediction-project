@@ -164,7 +164,7 @@ my_forest = forest.fit(X, y)
     
 
 pickle.dump(my_forest, open('iri.pkl', 'wb'))
-pickle.dump(encodin_scaling, open('es.pkl', 'wb'))
+#pickle.dump(encodin_scaling, open('es.pkl', 'wb'))
 
 
 
