@@ -120,27 +120,24 @@ train_df['self_employed'] = train_df['self_employed'].replace([defaultString], '
 train_df['work_interfere'] = train_df['work_interfere'].replace([defaultString], 'Don\'t know' )
 #print(train_df['work_interfere'].unique())
 
-
-
-#Encoding data
-labelDict = {}
-for feature in train_df:
-    le = preprocessing.LabelEncoder()
-    le.fit(train_df[feature])
-    le_name_mapping = dict(zip(le.classes_, le.transform(le.classes_)))
-    train_df[feature] = le.transform(train_df[feature])
-    # Get labels
-    labelKey = 'label_' + feature
-    labelValue = [*le_name_mapping]
-    labelDict[labelKey] =labelValue
-
 #Get rid of 'Country'
 train_df = train_df.drop(['Country'], axis= 1)
 
 
-# Scaling Age
-scaler = MinMaxScaler()
-train_df['Age'] = scaler.fit_transform(train_df[['Age']])
+
+#encodin and scaling function
+def encodin_scaling(data,x:str):
+    #Encoding data
+    for feature in data:
+        le = preprocessing.LabelEncoder()
+        le.fit(data[feature])
+        data[feature] = le.transform(data[feature])
+    # Scaling Age
+    scaler = MinMaxScaler()
+    data[x] = scaler.fit_transform(data[[x]])
+
+
+encodin_scaling(train_df,'Age')
 
 
 # Spliltting the dataset
@@ -151,34 +148,7 @@ X = train_df[feature_cols]
 y = train_df.treatment
 
 # split X and y into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
-
-# Create dictionaries for final graph
-# Use: methodDict['Stacking'] = accuracy_score
-methodDict = {}
-rmseDict = ()
-
-
-from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier
-
-forest = ExtraTreesClassifier(n_estimators=250,
-                              random_state=0)
-
-forest.fit(X, y)
-importances = forest.feature_importances_
-std = np.std([tree.feature_importances_ for tree in forest.estimators_],
-             axis=0)
-indices = np.argsort(importances)[::-1]
-
-labels = []
-for f in range(X.shape[1]):
-    labels.append(feature_cols[f])      
-  
-
-
-
-
-
+#X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
 
 
 
@@ -190,9 +160,11 @@ for f in range(X.shape[1]):
 
 # Building and fitting my_forest
 forest = RandomForestClassifier(max_depth = None, min_samples_leaf=8, min_samples_split=2, n_estimators = 20, random_state = 1)
-my_forest = forest.fit(X_train, y_train)
+my_forest = forest.fit(X, y)
     
 
 pickle.dump(my_forest, open('iri.pkl', 'wb'))
+pickle.dump(encodin_scaling, open('es.pkl', 'wb'))
+
 
 
