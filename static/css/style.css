@@ -1,10 +1,14 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
     font-family: arial;
+    scroll-behavior: smooth;
 
 }
-nav{
+header{
     position: fixed;
     top: 0;
     left: 0;
@@ -13,6 +17,7 @@ nav{
     padding: 10px 90px;
     box-sizing: border-box;
     background: rgba(0,0,0,0.6);
+    z-index: 1111;
 }
 .logo{
     padding: 22px 20px;
@@ -54,10 +59,10 @@ nav ul li a:hover{
 }
 .login-button{
     position: absolute;
-    left: 42%;
+    left: 29%;
     top: 80%;
     height: 50px;
-    width: 200px;
+    width: 500px;
     color: white;
     font-size: 25px;
     background: rgba(0,0,0,0.1);
@@ -78,16 +83,76 @@ nav ul li a:hover{
     height: 40vh;
     background-size: cover;
     background-position: center;
-    color: #fff;
+    color:#fff;
     font-size: 20px;
     font-weight: 20px;
 
 }
 .background-imagess{
+<<<<<<< HEAD
     background: url("dddd.jpg"); 
+=======
+    background: url("/static/images/dddd.jpg"); /*//TODO: #9 @Dichang */
+>>>>>>> 2f569e7f6ebf3e889fcd0e460285b144bedcd7d2
     margin: 20px 20px;
-    /* image-resolution: 10px; */
-    opacity: 0.5;
+    width: 84%;
+    height: 45vh;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
 }
 
 
+/* Abstract */
+
+.slide-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-color: #ef8172;
+    margin-bottom: 70px;
+
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    color: black;
+    padding: 8px 70px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.next {
+    right: 10px;
+
+}
+
+.prev {
+    left: 10px;
+}
+
+.slide {
+    display: none;
+}
+
+.slides-fonts{
+
+    padding: 90px 100px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #F6F1F1;
+    font-size: 25px;
+}
+/* Abstract */
+
+.doctor{
+    background-color: #62CDFF;
+    height: 800px;
+}
+.feedback{
+    background-color: yellow;
+    height: 800px;
+}
