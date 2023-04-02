@@ -124,21 +124,17 @@ train_df['work_interfere'] = train_df['work_interfere'].replace([defaultString],
 train_df = train_df.drop(['Country'], axis= 1)
 
 
+train_df.to_csv('intermediate.csv')
 
-#encodin and scaling function
-def encodin_scaling(data,x:str):
-    #Encoding data
-    for feature in data:
-        le = preprocessing.LabelEncoder()
-        le.fit(data[feature])
-        data[feature] = le.transform(data[feature])
-    # Scaling Age
-    scaler = MinMaxScaler()
-    data[x] = scaler.fit_transform(data[[x]])
+for feature in train_df:
+    le = preprocessing.LabelEncoder()
+    le.fit(train_df[feature])
+    train_df[feature] = le.transform(train_df[feature])
+    
 
-
-encodin_scaling(train_df,'Age')
-
+# Scaling Age
+scaler = MinMaxScaler()
+train_df['Age'] = scaler.fit_transform(train_df[['Age']])
 
 # Spliltting the dataset
 
@@ -162,9 +158,9 @@ y = train_df.treatment
 forest = RandomForestClassifier(max_depth = None, min_samples_leaf=8, min_samples_split=2, n_estimators = 20, random_state = 1)
 my_forest = forest.fit(X, y)
     
-
+ 
 pickle.dump(my_forest, open('iri.pkl', 'wb'))
-#pickle.dump(encodin_scaling, open('es.pkl', 'wb'))
+
 
 
 
