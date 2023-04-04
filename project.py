@@ -121,7 +121,7 @@ train_df['work_interfere'] = train_df['work_interfere'].replace([defaultString],
 #print(train_df['work_interfere'].unique())
 
 #Get rid of 'Country'
-train_df = train_df.drop(['Country'], axis= 1)
+#train_df = train_df.drop(['Country'], axis= 1)
 
 
 train_df.to_csv('intermediate.csv')
@@ -139,7 +139,7 @@ train_df['Age'] = scaler.fit_transform(train_df[['Age']])
 # Spliltting the dataset
 
 # define X and y
-feature_cols = ['Age', 'Gender', 'family_history', 'benefits', 'care_options', 'anonymity', 'leave', 'work_interfere']
+feature_cols =  ['Age', 'Gender','Country', 'family_history', 'benefits', 'care_options', 'anonymity', 'leave', 'work_interfere','remote_work','tech_company','wellness_program']
 X = train_df[feature_cols]
 y = train_df.treatment
 
@@ -155,7 +155,7 @@ y = train_df.treatment
 
 
 # Building and fitting my_forest
-forest = RandomForestClassifier(max_depth = None, min_samples_leaf=8, min_samples_split=2, n_estimators = 20, random_state = 1)
+forest = RandomForestClassifier(max_depth =None,criterion='gini', min_samples_leaf=7, min_samples_split=3,max_features=3, n_estimators = 20, random_state = 1)
 my_forest = forest.fit(X, y)
     
  

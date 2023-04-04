@@ -34,14 +34,14 @@ def home():
 
     a = np.array([[int(data1), data2, data3, data4, data5, data6, data7, data8]],dtype=object)
 
-    arr = pd.DataFrame(a,index=None,columns=['Age','Gender','family_history','benefits','care_options','anonymity','leave','work_interfere'])
+    arr = pd.DataFrame(a,index=None,columns=['Age', 'Gender','Country', 'family_history', 'benefits', 'care_options', 'anonymity', 'leave', 'work_interfere','remote_work','tech_company','wellness_program'])
 
 
     xrr=pd.read_csv('intermediate.csv',index_col=0)
 
     #print(xrr)
 
-    xrr=xrr[['Age','Gender','family_history','benefits','care_options','anonymity','leave','work_interfere']]
+    xrr=xrr[['Age', 'Gender','Country', 'family_history', 'benefits', 'care_options', 'anonymity', 'leave', 'work_interfere','remote_work','tech_company','wellness_program']]
 
     #print(arr)
 
