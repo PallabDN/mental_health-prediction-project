@@ -36,11 +36,13 @@ def home():
 
     arr = pd.DataFrame(a,index=None,columns=['Age','Gender','family_history','benefits','care_options','anonymity','leave','work_interfere'])
 
-    
+    print(arr)
 
-    #print(type(arr[['Age']]))
-
-    #es(arr,'Age')
+    le=LabelEncoder()
+    arr['Gender']=le.fit_transform(arr['Gender'])
+    # Scaling Age
+    scaler = MinMaxScaler()
+    arr['Age'] = scaler.fit_transform(arr[['Age']])
         
     print(arr)
 
