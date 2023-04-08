@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!-- form -->
+    <div class=" background-image1" id="testimonials">
+        <div class="form">
+
+
+            <form method="POST" , action="{{url_for('home')}}">
+                <label for="">Enter your age</label>
+                <input type="number" name="age">
+                <br>
+                <label for="">Enter your gender</label>
+                <select name="gender" id="gender">
+                    <option value="" selected disabled></option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="trans">trans</option>
+                </select>
+                <br>
+                <label for="">Is there any family history of mental health issues</label>
+                <select name="family" id="family">
+                    <option value="Yes">yes</option>
+                    <option value="No">no</option>
+                </select>
+                <br>
+                <label for="">Are you entitled to any company benefits</label>
+                <select name="benefits" id="benefits">
+                    <option value="Don't know">don't know</option>
+                    <option value="No">no</option>
+                    <option value="Yes">yes</option>
+                </select>
+                <br>
+                <label for="">Is your company gives care options regarding mental health issues</label>
+                <select name="care" id="care">
+                    <option value="No">no</option>
+                    <option value="Not sure">not sure</option>
+                    <option value="Yes">yes</option>
+                </select>
+                <br>
+                <label for="">Are you willing to share your mental health issues or remain anonymous</label>
+                <select name="anonymous" id="anonymous">
+                    <option value="Don't know">don't know</option>
+                    <option value="No">no</option>
+                    <option value="Yes">yes</option>
+                </select>
+                <br>
+                <label for="">How easy to get leave from your company</label>
+                <select name="leave" id="leave">
+                    <option value="Don't know">dont know</option>
+                    <option value="Somewhat difficult">somewhat difficult</option>
+                    <option value="Somewhat easy">somewhat easy</option>
+                    <option value="Very difficult">very difficult</option>
+                    <option value="Very easy">very easy</option>
+                </select>
+                <br>
+                <label for="">Have you experienced work interference?</label>
+                <select name="work" id="work">
+                    <option value="Don't know">don't know</option>
+                    <option value="Never">never</option>
+                    <option value="Often">often</option>
+                    <option value="Rarely">rarely</option>
+                    <option value="Sometimes">sometimes</option>
+                </select>
+
+                <br>
+                <label for="">Do you work remotely (outside of an office) at least 50% of the time?</label>
+                <select name="rwmote" id="rwmote">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+
+                <br>
+                <label for="">Do you work remotely (outside of an office) at least 50% of the time?</label>
+                <select name="rwmote" id="rwmote">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+
+                <br>
+                <label for="">Is your employer primarily a tech company/organization?</label>
+                <select name="tech" id="tech">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+
+                <br>
+
+                <input type="submit" , value='predict!' class="submit_button">
+            </form>
+
+        </div>
+    </div>
+    <!-- form -->
+
+
+</body>
+</html>
