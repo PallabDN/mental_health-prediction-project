@@ -19,6 +19,10 @@ def man():
     return render_template('index.html')
 
 
+@app.route('/form', methods=['POST'])
+def form():
+      return render_template('form.html')
+
 @app.route('/predict', methods=['POST'])
 
 def home():
@@ -84,6 +88,6 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,host="0.0.0.0",port=8080)
 
 

@@ -66,8 +66,13 @@
             organizational productivity (15). Thus, prioritizing the mental health of employees is essential.
         </div>
     </div>
-    <section> <a href="form.html">
-            <input type="button" value="  Check your mental health status" class="login-button"></a>
+    <section> <!--
+        <a href="form.html">
+        <input type="button" value="  Check your mental health status" class="login-button"></a>  
+        -->
+        <form method="POST", action="{{url_for('form')}}">
+            <input type="submit" value="Check your mental health status" class="login-button">
+        </form>
  </section>
 
 <!-- testimonials part -->
@@ -143,7 +148,7 @@
     <!-- footer -->
 
 
-    <script src="script.js"></script>
+    <script src="/static/javascript/script.js"></script>
     <!-- abstract -->
 
 
