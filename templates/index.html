@@ -31,18 +31,25 @@
                 <li><a href="#abstract">Abstract </a></li>
                 <li><a href="#testimonials">testimonials</a></li>
 
-                <li><a href="#doctor">consulting Doctor</a></li>
+                <!-- <li><a href="#doctor">consulting Doctor</a></li> -->
                 <li><a href="#feedback">feedback</a></li>
 
             </ul>
         </nav>
     </header>
     <div class="home-image">
-
+        <section> <!--
+            <a href="form.html">
+            <input type="button" value="  Check your mental health status" class="login-button"></a>  
+            -->
+            <form method="POST", action="{{url_for('form')}}">
+                <input type="submit" value="Check your mental health status" class="login-button">
+            </form>
+     </section>
     </div>
 
     <div class=" background-image-1">
-        <div class="introduction">
+        <div class="introduction" id="abstract">
             Mental health is a state of mental well-being that enables people to cope with the stresses of life, realize
             their abilities, learn well and work well, and contribute to their community. It is an integral component of
             health and well-being that underpins our individual and collective abilities to make decisions, build
@@ -65,15 +72,9 @@
             effectiveness resonates with the mental health of the employees, and it contributes to overall
             organizational productivity (15). Thus, prioritizing the mental health of employees is essential.
         </div>
+        
     </div>
-    <section> <!--
-        <a href="form.html">
-        <input type="button" value="  Check your mental health status" class="login-button"></a>  
-        -->
-        <form method="POST", action="{{url_for('form')}}">
-            <input type="submit" value="Check your mental health status" class="login-button">
-        </form>
- </section>
+   
 
 <!-- testimonials part -->
 
