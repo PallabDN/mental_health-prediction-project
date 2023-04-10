@@ -13,22 +13,22 @@
         <div class="form">
 
 
-            <form method="POST" , action="{{url_for('home')}}",oninput="result.value = age.value">
+            <form method="POST" , action="{{url_for('home')}}">
                 <label for="">Enter your age</label>
-                <input type="number" min="20" max="70" id="age">
+                <input type="number" min="20" max="70" id="age" name="age">
                 <br>
                 
                 <label for="">Select Your Gender:</label> 
-                     <input type="radio"  name="gender" value="Male">
+                    <input type="radio"  name="gender" value="male">
                       <label for="huey">Male</label>
-                    <input type="radio" name="gender" value="Female">
+                    <input type="radio" name="gender" value="female">
                       <label for="dewey">Female</label>
-                    <input type="radio"  name="gender" value="Trans">
+                    <input type="radio"  name="gender" value="trans">
                       <label for="louie">Trans</label>
                    <br>
                 <label for="country">Choose your country:</label>
 
-<select name="country" >
+<select name="country">
     <option value="" >--Please choose an option--</option>
     <option value="United States">United States</option>
     <option value="United Kingdom">United Kingdom</option>

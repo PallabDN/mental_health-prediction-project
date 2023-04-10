@@ -28,15 +28,19 @@ def form():
 def home():
     data1 = request.form['age']
     data2 = request.form['gender']
-    data3 = request.form['family']
-    data4 = request.form['benefits']
-    data5 = request.form['care']
-    data6 = request.form['anonymous']
-    data7 = request.form['leave']
-    data8 = request.form['work']
+    data3 = request.form['country']
+    data4 = request.form['family']
+    data5 = request.form['benefits']
+    data6 = request.form['care']
+    data7 = request.form['anonymous']
+    data8 = request.form['leave']
+    data9 = request.form['work']
+    data10 = request.form['remote']
+    data11 = request.form['tech']
+    data12 = request.form['wellness']
     
 
-    a = np.array([[int(data1), data2, data3, data4, data5, data6, data7, data8]],dtype=object)
+    a = np.array([[int(data1), data2, data3, data4, data5, data6, data7, data8,data9, data10,data11,data12]],dtype=object)
 
     arr = pd.DataFrame(a,index=None,columns=['Age', 'Gender','Country', 'family_history', 'benefits', 'care_options', 'anonymity', 'leave', 'work_interfere','remote_work','tech_company','wellness_program'])
 
