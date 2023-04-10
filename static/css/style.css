@@ -55,7 +55,7 @@ nav ul li a:hover{
 .home-image{
     width: 100%;
     height: 100vh;
-    background: url("/static/images/image.jfif");
+    background: url("/static/images/top\ image.jfif");
     background-size: cover;
     background-position: center;
 }
@@ -65,7 +65,7 @@ nav ul li a:hover{
 .login-button{
     position: absolute;
     left: 29%;
-    /* top: 260%; */
+    top: 95%;
     height: 50px;
     width: 500px;
     color: black;
@@ -89,7 +89,7 @@ nav ul li a:hover{
     font-weight: 20px;
     text-align: center;
     font-family: 'Alkatra', cursive;
-    margin: 15% 15% 0 15%;
+    margin: 5% 15% 0 15%;
     position: absolute;
     
    
@@ -100,13 +100,14 @@ nav ul li a:hover{
 .background-image-1{
    
     background: url("/static/images/intro-image.jfif"); /*//TODO: #9 @Dichang */
-    margin: 20px 20px;
+    margin: 3% 20px;
     width: 97%;
     height: 130vh;
     position: static;
     background-size: cover;
     background-position: center;
     border-radius: 30px;
+    /* margin:3% 0 0 0; */
     /* box-shadow: black; */
 }
 
@@ -119,7 +120,7 @@ nav ul li a:hover{
     height: 70vh;
     background-color: #61764B;
     border-radius: 20px;
-     margin: 100px 0 0 0;
+     margin: 0;
     
 
 }
