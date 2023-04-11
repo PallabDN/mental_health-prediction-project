@@ -21,19 +21,21 @@ header{
     z-index: 1111;
     /* border-radius: 0 0 20px 20px; */
 }
+
 .logo{
     padding: 22px 20px;
     height: 80px;
     float: left;
     font-size: 24px;
     font-weight: bold;
-    font-family: 'Edu NSW ACT Foundation', cursive;
+    /* font-family: 'Edu NSW ACT Foundation', cursive; */
     text-transform: uppercase;
-    color: #fff;
-    text-decoration: none;
+    /* color: #fff; */
+    /* text-decoration: none; */
 }
 nav div a {
     text-decoration: none;
+    color: #fff;
 }
 
 nav ul{
