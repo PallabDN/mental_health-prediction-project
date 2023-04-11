@@ -13,7 +13,7 @@ h1{
     background-color: rgba(0,0,0,0.5);
    position: absolute;
     width: 88%;
-    height: 200vh;
+    height: 210vh;
     font-size: 26px;
     
     border-radius: 30px;
@@ -30,7 +30,7 @@ h1{
 .submit_button {
     position: absolute;
     left: 40%;
-    top: 93%;
+    top: 94%;
     height: 50px;
     width: 200px;
     color: white;
@@ -44,7 +44,7 @@ h1{
 }
 .background-image1{
     width: 100%;
-    height: 230vh;
+    height: 240vh;
     /* background: url("https://images.unsplash.com/photo-1575379467364-3948cc047b78?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGdyZWVuJTIwYmx1cnJ5JTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"); */
     /* background: url("https://media.istockphoto.com/id/1317585024/photo/green-clover-leaves-st-patrick-s-day.jpg?s=612x612&w=0&k=20&c=wBr2Um6NWRs27y6LpjaxrcUPA01C_eOrca0-0gRjCHk="); */
     /* background: url("https://media.istockphoto.com/id/657837312/photo/beautiful-floral-summer-backgroung-beautiful-blurred-summer-night.jpg?s=612x612&w=0&k=20&c=49YoePik4zFKSF7S3VkUiC79Hyet-nWyOZRZvscRBy8="); */
@@ -57,10 +57,11 @@ h1{
 /* form */
 .form-ss{
  display: inline-block;
-    width: 860px;
+    width: 790px;
     margin: 20px;
     /* text-align: center; */
 }
+
 .form-s{
      /* width: 760px; */
     margin: 20px;
