@@ -79,15 +79,15 @@ def home():
 
     t_arr=pred_proba[0]
     if(t_arr>=0 and t_arr<0.2):
-            data=0
+        return render_template('low.html')
     if(t_arr>=0.2 and t_arr<0.5):
-            data=1
+        return render_template('middle.html')
     else:
-            data=2
+        return render_template('high.html')
     
     #print("predict "+str(pred))
 
-    return render_template('after.html',data=data)
+    #return render_template('after.html',data=data)
 
 
 
