@@ -16,126 +16,143 @@
     <!-- form -->
     <img class="brain" src="/static/images/brain.png" alt="">
     <div class=" background-image1" id="testimonials">
-        <div class="form">
-
-
-            <form method="POST" , action="{{url_for('home')}}">
-                <label for="">Enter your age</label>
-                <input type="number" min="20" max="70" id="age" name="age">
-                <br>
-                
-                <label for="">Select Your Gender:</label> 
-                    <input type="radio"  name="gender" value="male">
-                      <label for="huey">Male</label>
+        <div class="form-background">
+            <div class="form">
+                <h1>LEAP OF FAITH</h1></p>
+                <form method="POST" , action="{{url_for('home')}}">
+                    <ul>
+                        <li>
+                    <label class="form-ss" for="">Enter your age</label>
+                    <input type="number" min="20" max="70" id="age" name="age">
+                    </li>
+                    <li>
+                    <label class="form-s" for="">Select Your Gender:</label>
+                    <input type="radio" name="gender" value="male">
+                    <label for="huey">Male</label>
                     <input type="radio" name="gender" value="female">
-                      <label for="dewey">Female</label>
-                    <input type="radio"  name="gender" value="trans">
-                      <label for="louie">Trans</label>
-                   <br>
-                <label for="country">Choose your country:</label>
+                    <label for="dewey">Female</label>
+                    <input type="radio" name="gender" value="trans">
+                    <label for="louie">Trans</label>
+                    </li>
+                    <li>
+                    <label class="form-ss" for="country">Choose your country:</label>
 
-<select name="country">
-    <option value="" >--Please choose an option--</option>
-    <option value="United States">United States</option>
-    <option value="United Kingdom">United Kingdom</option>
-    <option value="Belgium ">Belgium</option>
-    <option value="Israel">Israel</option>
-    <option value="Brazil">Brazil</option>
-    <option value="Bulgaria">Bulgaria</option>
-    <option value="Canada">Canada</option>
-    <option value="New Zealand">New Zealand</option>
-    <option value="Sweden">Sweden</option>
-    <option value="Singapore">Singapore</option>
-    <option value="Croatia">Croatia</option>
-    <option value="Italy">Italy</option>
-    <option value="South Africa">South Africa</option>
-    <option value="India">India</option>
-    <option value="Ireland">Ireland</option>
-    <option value="Germany">Germany</option>
-    <option value="Netharlands">Netharlands</option>
-    <option value="Australia">Australia</option>
-    
-</select>
-<br>
+                    <select name="country">
+                        <option class="option-1" value="">--Please choose an option--</option>
+                        <option value="United States">United States</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Belgium ">Belgium</option>
+                        <option value="Israel">Israel</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Bulgaria">Bulgaria</option>
+                        <option value="Canada">Canada</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Croatia">Croatia</option>
+                        <option value="Italy">Italy</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="India">India</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Netharlands">Netharlands</option>
+                        <option value="Australia">Australia</option>
 
-                <label for="">Do you have a family history of mental illness?</label>
-                <select name="family" id="family">
-                    <option value="" >--Please choose an option--</option>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                </select>
-                <br>
-                <label for="">Does your employer provide mental health benefits?</label>
-                <select name="benefits" id="benefits">
-                    <option value="" >--Please choose an option--</option>
-                    <option value="Don't know">Don't know</option>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
-                </select>
-                <br>
-                <label for="">Is your company gives care options regarding mental health issues</label>
-                <select name="care" id="care">
-                    <option value="" >--Please choose an option--</option>
-                    <option value="No">No</option>
-                    <option value="Not sure">Not sure</option>
-                    <option value="Yes">Yes</option>
-                </select>
-                <br>
-                <label for="">Is your anonymity protected if you choose to take advantage of mental health or substance abuse treatment resources?
+                    </select> 
+                    </li>
+                    <li>
 
-                </label>
-                <select name="anonymous" id="anonymous">
-                    <option value="" >--Please choose an option--</option>
-                    <option value="Don't know">Don't know</option>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
-                </select>
-                <br>
-                <label for="">How easy is it for you to take medical leave for a mental health condition?</label>
-                <select name="leave" id="leave">
-                    <option value="" >--Please choose an option--</option>
-                    <option value="Don't know">Dont know</option>
-                    <option value="Somewhat difficult">Somewhat difficult</option>
-                    <option value="Somewhat easy">Somewhat easy</option>
-                    <option value="Very difficult">Very difficult</option>
-                    <option value="Very easy">Very easy</option>
-                </select>
-                <br>
-                <label for="">If you have a mental health condition, do you feel that it interferes with your work?</label>
-                <select name="work" id="work">
-                    <option value="" >--Please choose an option--</option>
-                    <option value="Don't know">Don't know</option>
-                    <option value="Never">Never</option>
-                    <option value="Often">Often</option>
-                    <option value="Rarely">Rarely</option>
-                    <option value="Sometimes">Sometimes</option>
-                </select>
-                 <br>
-                 <label for="">Do you work remotely (outside of an office) at least 50% of the time?</label>
-                <select name="remote" id="remote">
-                    <option value="" >--Please choose an option--</option>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
-                </select>
-                <br>
-                <label for="">Is your employer primarily a tech company/organization?</label>
-                <select name="tech" id="tech">
-                    <option value="" >--Please choose an option--</option>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
-                </select>
-                <br>
-                <label for="">Has your employer ever discussed mental health as part of an employee wellness program?</label>
-                <select name="wellness" id="wellness">
-                    <option value="" >--Please choose an option--</option>
-                    <option value="Don't know">Don't know</option>
-                    <option value="No">No</option>
-                    <option value="Yes">Yes</option>
-                </select>
-                <br>
-                
-                <input type="submit" , value='predict!' class="submit_button">
-            </form>
+                    <label class="form-ss" for="">Do you have a family history of mental illness?</label>
+                    <select name="family" id="family">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label class="form-ss" for="">Does your employer provide mental health benefits?</label>
+                    <select name="benefits" id="benefits">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Don't know">Don't know</option>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label class="form-ss" for="">Is your company gives care options regarding mental health issues</label>
+                    <select name="care" id="care">
+                        <option value="">--Please choose an option--</option>
+                        <option value="No">No</option>
+                        <option value="Not sure">Not sure</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label class="form-ss" for="">Is your anonymity protected if you choose to take advantage of mental health or
+                        substance
+                        abuse treatment resources?
+
+                    </label>
+                    <select name="anonymous" id="anonymous">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Don't know">Don't know</option>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label class="form-ss" for="">How easy is it for you to take medical leave for a mental health condition?</label>
+                    <select name="leave" id="leave">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Don't know">Dont know</option>
+                        <option value="Somewhat difficult">Somewhat difficult</option>
+                        <option value="Somewhat easy">Somewhat easy</option>
+                        <option value="Very difficult">Very difficult</option>
+                        <option value="Very easy">Very easy</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label class="form-ss" for="">If you have a mental health condition, do you feel that it interferes with your
+                        work?</label>
+                    <select name="work" id="work">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Don't know">Don't know</option>
+                        <option value="Never">Never</option>
+                        <option value="Often">Often</option>
+                        <option value="Rarely">Rarely</option>
+                        <option value="Sometimes">Sometimes</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label class="form-ss" for="">Do you work remotely (outside of an office) at least 50% of the time?</label>
+                    <select name="remote" id="remote">
+                        <option value="">--Please choose an option--</option>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label class="form-ss" for="">Is your employer primarily a tech company/organization?</label>
+                    <select name="tech" id="tech">
+                        <option value="">--Please choose an option--</option>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                    </li>
+                    <li>
+                    <label class="form-ss" for="">Has your employer ever discussed mental health as part of an employee wellness
+                        program?</label>
+                    <select name="wellness" id="wellness">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Don't know">Don't know</option>
+                        <option value="No">No</option>
+                        <option value="Yes">Yes</option>
+                    </select>
+                    </li>
+
+                    <input type="submit" , value='predict!' class="submit_button">
+                </ul>
+                </form>
 
             </div>
         </div>
