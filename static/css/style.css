@@ -138,7 +138,7 @@ nav ul li a:hover{
     top: 113%;
     position: absolute;
     border-radius: 20px;
-    box-shadow: 10px 10px 5px rgba(33, 132, 165, 0.952);
+    box-shadow: 10px 10px 5px rgba(9, 24, 29, 0.762);
 }
 .introduction-2-background{
     background-color: #297042cc;
@@ -148,7 +148,7 @@ nav ul li a:hover{
     left: 51%;
     top: 113%;
     border-radius: 20px;
-    box-shadow: 10px 10px 5px lightgreen;
+    box-shadow: 10px 10px 5px rgba(9, 24, 29, 0.762);
 }
 .introduction-3-background{
     background-color: #631b4be6;
@@ -158,7 +158,7 @@ nav ul li a:hover{
     top: 175%;
     border-radius: 20px;
     left: 3%;
-    box-shadow: 10px 10px 5px rgba(146, 16, 146, 0.966);
+    box-shadow: 10px 10px 5px rgba(9, 24, 29, 0.762);
 }
 .introduction-4-background{
     background-color: #3d601dda;
@@ -168,7 +168,7 @@ nav ul li a:hover{
     top: 175%;
     left: 51%;
     border-radius: 20px;
-    box-shadow: 10px 10px 5px rgba(14, 89, 29, 0.962);
+    box-shadow: 10px 10px 5px rgba(9, 24, 29, 0.762);
 
 }
 .introduction-1{
