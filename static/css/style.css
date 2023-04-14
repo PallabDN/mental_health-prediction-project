@@ -22,8 +22,13 @@ header{
     /* border-radius: 0 0 20px 20px; */
   
 }
-.home-logo{
-    font-size: 20px;
+.logo-home{
+    position: absolute;
+    font-size: 12px;
+    width: 300%;
+    height: 50%;
+   color: #fff;
+    margin: 0 0 10px 0;
 }
 
 .logo{
