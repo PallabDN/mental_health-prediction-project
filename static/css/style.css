@@ -97,8 +97,6 @@ nav ul li a:hover{
     font-size:40px;
     color: #41644A;
     font-family: 'Roboto Slab', serif;
-   
-    
 }
 
 /* login-botton */
@@ -123,20 +121,13 @@ nav ul li a:hover{
 }
 /* login-botton */
 .introduction{
-    
-  
-    color:black;
+     color:black;
     font-size: 23px;
     font-weight: 20px;
     text-align: center;
     font-family: 'Alkatra', cursive;
     margin: 5% 8% 5% 8%;
     position: absolute;
-    
-   
-   
-    
-
 }
 .introduction-1-background{
     background-color: #193467d1;
@@ -239,10 +230,6 @@ nav ul li a:hover{
     height: 90%;
      font-family: 'Alkatra', cursive;
 }
-
-
-
-
 
 .background-image-1{
    
