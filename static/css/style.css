@@ -148,6 +148,10 @@ nav ul li a:hover{
     border-radius: 20px;
     box-shadow: 10px 10px 5px rgba(9, 24, 29, 0.762);
 }
+.introduction-1-background:hover{
+    background-color: #193467e1;
+
+}
 .introduction-2-background{
     background-color: #297042cc;
     height: 58%;
@@ -157,6 +161,10 @@ nav ul li a:hover{
     top: 113%;
     border-radius: 20px;
     box-shadow: 10px 10px 5px rgba(9, 24, 29, 0.762);
+}
+.introduction-2-background:hover{
+    background-color: #297042e7;
+
 }
 .introduction-3-background{
     background-color: #631b4be6;
@@ -168,6 +176,10 @@ nav ul li a:hover{
     left: 3%;
     box-shadow: 10px 10px 5px rgba(9, 24, 29, 0.762);
 }
+.introduction-3-background:hover{
+    background-color: #631b4bfb;
+
+}
 .introduction-4-background{
     background-color: #3d601dda;
     height: 58%;
@@ -177,6 +189,10 @@ nav ul li a:hover{
     left: 51%;
     border-radius: 20px;
     box-shadow: 10px 10px 5px rgba(9, 24, 29, 0.762);
+
+}
+.introduction-4-background:hover{
+    background-color: #3d601def;
 
 }
 .introduction-1{
