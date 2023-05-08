@@ -1,71 +1,70 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     font-family: arial;
     scroll-behavior: smooth;
-    background-color:#C2F9F0;
+    background-color: #C2F9F0;
 
 }
-header{
+
+header {
     position: fixed;
-    /* top: 0;
-    left: 0; */
     width: 100%;
     height: 55px;
-    /* padding: 0px 90px; */
     box-sizing: border-box;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1111;
-    /* border-radius: 0 0 20px 20px; */
-  
+
+
 }
-.logo-home{
+
+.logo-home {
     position: absolute;
     font-size: 12px;
     width: 300%;
     height: 50%;
-   color: #fff;
+    color: #fff;
     margin: 0 0 10px 0;
 }
 
-.logo{
-    /* padding: 22px 20px;
-    height: 80px; */
-    /* float: left; */
+.logo {
+
     font-size: 24px;
     font-weight: bold;
-    /* font-family: 'Edu NSW ACT Foundation', cursive; */
-    /* text-transform: uppercase; */
-    position:absolute;
+
+    position: absolute;
     left: 2%;
     top: 21%;
-  
+
 }
-.logo-1{
+
+.logo-1 {
     position: absolute;
     left: 60%;
     top: -21%;
-    /* bottom: %; */
     float: right;
-    
+
 
 }
+
 nav div a {
     text-decoration: none;
     color: #fff;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     float: right;
     margin: 0;
     padding: 0;
     display: flex;
 }
-nav ul li a{
+
+nav ul li a {
     line-height: 80px;
     color: #fff;
     padding: 12px 30px;
@@ -75,33 +74,36 @@ nav ul li a{
     text-transform: uppercase;
 
 }
-nav ul li a:hover{
-    background: rgba(0,0,0,0.7);
+
+nav ul li a:hover {
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
 
 }
-.home-image{
+
+.home-image {
     width: 100%;
     height: 100vh;
     background: url("/static/images/home-image-1.jfif");
     background-size: cover;
     background-position: center;
 }
-.quotes1{
+
+.quotes1 {
     position: absolute;
     width: 500px;
     height: 300px;
     margin: 150px 0 0 50px;
-    color:#fff;
+    color: #fff;
     text-align: center;
-    font-size:40px;
+    font-size: 40px;
     color: #41644A;
     font-family: 'Roboto Slab', serif;
 }
 
 /* login-botton */
 
-.login-button{
+.login-button {
     position: absolute;
     left: 29%;
     top: 83%;
@@ -109,19 +111,21 @@ nav ul li a:hover{
     width: 500px;
     color: black;
     font-size: 25px;
-    background: rgba(0,0,0,0.1);
-    
+    background: rgba(0, 0, 0, 0.1);
+
     border-radius: 10px;
     text-transform: uppercase;
     font-family: 'Roboto Slab', serif;
     font-weight: 400px;
 }
-.login-button:hover{
+
+.login-button:hover {
     color: rgb(88, 88, 226);
 }
+
 /* login-botton */
-.introduction{
-     color:black;
+.introduction {
+    color: black;
     font-size: 23px;
     font-weight: 20px;
     text-align: center;
@@ -129,7 +133,8 @@ nav ul li a:hover{
     margin: 5% 8% 5% 8%;
     position: absolute;
 }
-.introduction-1-background{
+
+.introduction-1-background {
     background-color: #193467d1;
     height: 58%;
     width: 46%;
@@ -139,11 +144,13 @@ nav ul li a:hover{
     border-radius: 20px;
     box-shadow: 10px 10px 5px rgba(9, 24, 29, 0.762);
 }
-.introduction-1-background:hover{
+
+.introduction-1-background:hover {
     background-color: #193467e1;
 
 }
-.introduction-2-background{
+
+.introduction-2-background {
     background-color: #297042cc;
     height: 58%;
     width: 46%;
@@ -153,11 +160,13 @@ nav ul li a:hover{
     border-radius: 20px;
     box-shadow: 10px 10px 5px rgba(9, 24, 29, 0.762);
 }
-.introduction-2-background:hover{
+
+.introduction-2-background:hover {
     background-color: #297042e7;
 
 }
-.introduction-3-background{
+
+.introduction-3-background {
     background-color: #631b4be6;
     height: 58%;
     width: 46%;
@@ -167,11 +176,13 @@ nav ul li a:hover{
     left: 3%;
     box-shadow: 10px 10px 5px rgba(9, 24, 29, 0.762);
 }
-.introduction-3-background:hover{
+
+.introduction-3-background:hover {
     background-color: #631b4bfb;
 
 }
-.introduction-4-background{
+
+.introduction-4-background {
     background-color: #3d601dda;
     height: 58%;
     width: 46%;
@@ -182,58 +193,62 @@ nav ul li a:hover{
     box-shadow: 10px 10px 5px rgba(9, 24, 29, 0.762);
 
 }
-.introduction-4-background:hover{
+
+.introduction-4-background:hover {
     background-color: #3d601def;
 
 }
-.introduction-1{
+
+.introduction-1 {
     text-align: justify;
-    color:#fff;
+    color: #fff;
     font-size: 22px;
     margin: 20px 20px 20px 20px;
     width: 95%;
     height: 90%;
-     font-family: 'Alkatra', cursive;
+    font-family: 'Alkatra', cursive;
 }
-.introduction-2{
+
+.introduction-2 {
     text-align: center;
     text-align: justify;
-    color:#fff;
+    color: #fff;
     font-size: 22px;
     margin: 20px 20px 20px 20px;
     width: 95%;
     height: 90%;
-     font-family: 'Alkatra', cursive;
+    font-family: 'Alkatra', cursive;
 }
 
 
 
-.introduction-3{
+.introduction-3 {
     text-align: center;
     text-align: justify;
-    color:#fff;
+    color: #fff;
     font-size: 22px;
     margin: 20px 20px 20px 20px;
     width: 95%;
     height: 90%;
-     font-family: 'Alkatra', cursive;
+    font-family: 'Alkatra', cursive;
 }
 
 
-.introduction-4{
+.introduction-4 {
     text-align: center;
     text-align: justify;
-    color:#fff;
+    color: #fff;
     font-size: 22px;
     margin: 20px 20px 20px 20px;
     width: 95%;
     height: 90%;
-     font-family: 'Alkatra', cursive;
+    font-family: 'Alkatra', cursive;
 }
 
-.background-image-1{
-   
-    background: url("/static/images/intro-image.jfif"); /*//TODO: #9 @Dichang */
+.background-image-1 {
+
+    background: url("/static/images/intro-image.jfif");
+    /*//TODO: #9 @Dichang */
     margin: 3% 20px;
     width: 97%;
     height: 130vh;
@@ -241,8 +256,6 @@ nav ul li a:hover{
     background-size: cover;
     background-position: center;
     border-radius: 30px;
-    /* margin:3% 0 0 0; */
-    /* box-shadow: black; */
     opacity: 1;
 }
 
@@ -255,8 +268,8 @@ nav ul li a:hover{
     height: 50vh;
     background-color: #61764B;
     border-radius: 20px;
-     margin: 0;
-    
+    margin: 0;
+
 
 }
 
@@ -283,7 +296,7 @@ nav ul li a:hover{
     display: none;
 }
 
-.slides-fonts{
+.slides-fonts {
 
     padding: 10%;
     text-align: center;
@@ -291,13 +304,15 @@ nav ul li a:hover{
     color: #F6F1F1;
     font-size: 25px;
 }
+
 /* Abstract */
 
-.doctor{
+.doctor {
     background-color: #62CDFF;
     height: 800px;
 }
-.feedback{
+
+.feedback {
     background-color: yellow;
     height: 800px;
 }
@@ -309,7 +324,7 @@ nav ul li a:hover{
 .footer {
     height: 150px;
     font-family: 'Alkatra', cursive;
-    
+
 }
 
 .copyright {
@@ -325,6 +340,7 @@ nav ul li a:hover{
     margin: 0 0 0 110px;
     position: absolute;
 }
+
 .left_gmail:hover {
     color: #19376D;
 }
@@ -333,6 +349,7 @@ nav ul li a:hover{
     position: absolute;
     margin: 0 0 0 550px;
 }
+
 .middle_gmail:hover {
     color: #19376D;
 }
@@ -342,6 +359,7 @@ nav ul li a:hover{
     margin: 0 0 0 950px;
 
 }
+
 .right_gmail:hover {
     color: #19376D;
 }
@@ -355,10 +373,12 @@ h4 {
     position: absolute;
     margin: 3px 0 0 88px;
 }
+
 .sms-logo2 {
     position: absolute;
     margin: 3px 0 0 528px;
 }
+
 .sms-logo3 {
     position: absolute;
     margin: 3px 0 0 929px;
